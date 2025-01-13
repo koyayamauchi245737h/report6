@@ -24,7 +24,10 @@ public class Main {
         System.out.println("\n現在の座席状況:");
         manager.displaySeats();
 
-        // 座席選択
+        /** 
+         * 座席選択
+         * 入力された座席の行番号、列番号からそれぞれ１を引いて調整
+        */
         boolean seatReserved = false;
         while(!seatReserved){
         System.out.print("\n座席の行番号を入力: ");
