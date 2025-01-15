@@ -12,7 +12,7 @@ public class Seat {
 
     /**
      * コンストラクタ: ランダムに予約された座席状況を初期化する.
-     * @param percentage 初期予約率 (例: 0.3 = 30%)
+     * @param percentage 初期予約率
      */
     public Seat(double percentage) {
         randomizeSeats(percentage);
@@ -51,8 +51,8 @@ public class Seat {
     }
 
     /**
-     * ランダムに座席を予約する (内部で使用).
-     * @param percentage 予約率 (例: 0.2 = 20%)
+     * ランダムに座席を予約する.
+     * @param percentage 予約確率
      */
     private void randomizeSeats(double percentage) {
         Random random = new Random();

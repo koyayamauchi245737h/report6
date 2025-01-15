@@ -10,7 +10,7 @@ public class TicketManager {
 
     /**
      * コンストラクタ: 指定された予約率で座席を初期化する.
-     * @param seatReservationRate 初期予約率 (例: 0.3 = 30%の座席を予約)
+     * @param seatReservationRate 初期予約率
      */
     public TicketManager(double seatReservationRate) {
         this.seatManager = new Seat(seatReservationRate);

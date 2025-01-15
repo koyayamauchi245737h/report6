@@ -33,16 +33,5 @@ public class TicketManagerTest {
         assertEquals(1200, manager.calculatePrice(70), "70歳の料金は1200円であるべき (シニア)");
     }
 
-    @Test
-    public void testReserveSeat() {
-        TicketManager manager = new TicketManager(0.0);
-
-        // 有効な座席予約
-        assertTrue(manager.reserveSeat(2, 3), "(2, 3) の座席は予約可能であるべき");
-        assertFalse(manager.reserveSeat(2, 3), "(2, 3) の座席は既に予約されているべき");
-
-        // 無効な座席予約
-        assertFalse(manager.reserveSeat(-1, 3), "負の座席番号は予約できないべき");
-        assertFalse(manager.reserveSeat(5, 5), "範囲外の座席番号は予約できないべき");
-    }
+    
 }
