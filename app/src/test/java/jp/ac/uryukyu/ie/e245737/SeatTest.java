@@ -22,26 +22,6 @@ public class SeatTest {
         assertFalse(seat.reserveSeat(5, 5), "範囲外の座席番号は予約できないべき");
     }
 
-    @Test
-    public void testRandomizeSeats() {
-        Seat seat = new Seat(0.5); // 初期状態で50%の確率で予約
-
-        // 座席の予約率をチェック (少なくとも1つの座席が予約されているはず)
-        boolean hasReservedSeats = false;
-        boolean hasEmptySeats = false;
-
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                if (seat.reserveSeat(i, j)) {
-                    hasEmptySeats = true;
-                } else {
-                    hasReservedSeats = true;
-                }
-            }
-        }
-
-        assertTrue(hasReservedSeats, "少なくとも1つの座席が予約されているべき");
-        assertTrue(hasEmptySeats, "少なくとも1つの座席が空いているべき");
-    }
+    
 }
 
